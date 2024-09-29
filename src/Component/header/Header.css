@@ -1,0 +1,97 @@
+/* Header styles */
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+}
+
+/* Header Container */
+.header__container {
+    max-width: 1100px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/* Header Navigation */
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Header Logo */
+.header__logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Header Links */
+.header__nav-links {
+    display: flex;
+    list-style: none;
+    transition: all 0.3s ease;
+}
+
+/* Header Link */
+.header__nav-item {
+    margin-left: 1rem;
+    padding:10px;
+}
+
+/* Header Link */
+.header__nav-link {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem;
+    transition: background-color 0.3s ease;
+    font-weight: 600;
+}
+
+/* Active Header Link */
+.header__nav-link--active {
+    background-color: #fff;
+    color: #000;
+    border-radius: 5px;
+}
+/* Header Menu Icon */
+.header__menu-icon {
+    display: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+/* Media Queries for mobile view */
+@media (max-width: 768px) {
+    .header__nav-links {
+        /* Hide the links */
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+    }
+
+    /* Show the links */
+    .header__nav-links--show {
+        display: flex;
+    }
+
+    /* Center the links */
+    .header__nav-item {
+        margin: 0;
+        text-align: center;
+    }
+
+    /* Style the links */
+    .header__nav-link {
+        display: block;
+        padding: 1rem;
+    }
+
+    /* Show the menu icon */
+    .header__menu-icon {
+        display: block;
+    }
+}

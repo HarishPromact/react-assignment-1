@@ -1,0 +1,103 @@
+/* EmployeeList.css */
+.employee-list-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff; 
+    color: #333; 
+  }
+  
+  /* Employee List Title */
+  .employee-list-title {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Table */
+  .table-responsive {
+    overflow-x: auto; 
+  }
+  
+  /* Employee Table */
+  .employee-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Table Rows */
+  .employee-table th,
+  .employee-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* Table Headers */
+  .employee-table th {
+    background-color: #333; 
+    color: #fff; 
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.9em;
+  }
+  
+  /* Table Rows */
+  .employee-table tr {
+    transition: background-color 0.3s; 
+  }
+  
+  /* Table Rows Hover */
+  .employee-table tr:hover {
+    background-color: #f0f0f0; 
+  }
+  
+  /* Icon Button */
+  .icon-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    margin-right: 5px;
+    transition: opacity 0.2s;
+  }
+  
+  /* Icon Button Hover */
+  .icon-button:hover {
+    opacity: 0.7;
+  }
+  
+  /* No Employees */
+  .no-employees {
+    text-align: center;
+    color: #666;
+    font-style: italic;
+  }
+
+  /* Delete Icon */
+  .delete-icon {
+    color: red;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 768px) {
+    /* Table */
+    .employee-table {
+      font-size: 14px;
+    }
+  
+    /* Table Headers */
+    .employee-table th,
+    .employee-table td {
+      padding: 8px;
+    }
+  
+    /* Icon Button */
+    .icon-button {
+      font-size: 12px; 
+      padding: 3px; 
+    }
+  }
+  

@@ -1,0 +1,135 @@
+
+  /* Add Employee Container */
+  .container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  /* Add Employee Form */
+  .form-container {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  /* Form Title */
+  .form-title {
+    color: #333;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Form Row */
+  .form-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 1rem;
+  }
+  
+  /* Form Group */
+  .form-group {
+    flex: 1 1 calc(50% - 5px);
+    min-width: 150px;
+  }
+
+  /* Validation color */
+  .validation-color {
+    color: red;
+    margin-top: 2px;
+  }
+
+  /* Form Label  */
+  .form-label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  /* Form Input */
+  .form-input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+    box-sizing: border-box;
+  }
+  
+  /* Form Input Focus */
+  .form-input:focus {
+    outline: none;
+    border-color: #007bff;
+  }
+  
+  /* Button Container */
+  .button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+    gap: 10px;
+  }
+  
+  /* Button */
+  .btn {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    flex: 1;
+  }
+  
+  /* Button Back */
+  .btn-back {
+    background-color: #f0f0f0;
+    color: #333;
+  }
+  
+  /* Button Back Hover */
+  .btn-back:hover {
+    background-color: #e0e0e0;
+  }
+  
+  /* Button Submit */
+  .btn-submit {
+    background-color: #000000;
+    color: white;
+  }
+  
+  /* Button Submit Disabled */
+  .btn-disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  /* Button Submit Hover */
+  .btn-submit:hover {
+    background-color: #555;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 480px) {
+    /* Form Group */
+    .form-group {
+      flex: 1 1 100%;
+    }
+    
+    /* Button Container */
+    .button-container {
+      flex-direction: column;
+    }
+    
+    /* Button */
+    .btn {
+      width: 100%;
+    }
+  }
